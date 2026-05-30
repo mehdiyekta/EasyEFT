@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>تمرین جدید</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="title">
+       <string>تنظیمات تمرین</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QCheckBox" name="chkbxmanualduration">
+           <property name="text">
+            <string>زمان دستی</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frmmanualtime">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>ثانیه</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="sbsec">
+                <property name="minimum">
+                 <number>30</number>
+                </property>
+                <property name="maximum">
+                 <number>59</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="sbminut">
+                <property name="maximum">
+                 <number>60</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>دقیقه</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>* پیشفرض هر دور EFT ، به طور میانگین 30 ثانیه در نظر گرفته شده است</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="6">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="title">
+       <string>توضیحات</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>نام خاطره/فیلم ذهنی</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="leprobname">
+           <property name="placeholderText">
+            <string>خاطره خود را وارد کنید. اگر فیلم ذهنی است، عنوان را وارد کنید</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cbtype">
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <item>
+          <property name="text">
+           <string>:از نوع</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خاطره</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>فیلم ذهنی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>احساس(فیزیکی)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>احساس(غیر فیزیکی)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cbcateg">
+         <item>
+          <property name="text">
+           <string>دسته بندی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ثروت</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>روابط</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>سلامتی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>معنویت</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>رشد شخصی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خاطره دردناک</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>غیره</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="title">
+       <string>جنبه(دنباله) خاطرات دیگر</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QCheckBox" name="cbrelate">
+         <property name="text">
+          <string>ارتباط با خاطره/باور/احساس دیگر</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLineEdit" name="lesearchmem">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="placeholderText">
+            <string>خاطره مورد نظر را جست و جو کنید...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cbsearchcat">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>جست و جو دسته بندی</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ثروت</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>روابط</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QListWidget" name="lwsearch">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QPushButton" name="btnback">
+           <property name="text">
+            <string>بازگشت</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnstart">
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+           <property name="text">
+            <string>شروع تمرین</string>
+           </property>
+           <property name="autoDefault">
+            <bool>true</bool>
+           </property>
+           <property name="default">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="5">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>توضیحات اضافه (اختیاری)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="teadditionaldescription">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="placeholderText">
+         <string>اگر فیلم ذهنی است و عنوان آن را در نام خاطره نوشتید میتوانید جهت یادآوری بهتر در آینده (جهت تست شدت) توضیحات اضافه را در مورد آن وارد کنید.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="title">
+         <string>عکس جهت تحریک ذهن</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QCheckBox" name="cbfile">
+           <property name="text">
+            <string>استفاده از عکس؟</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frmd">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLineEdit" name="leadress"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnfiledialog">
+              <property name="text">
+               <string>مرورگر فایل</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1" colspan="5">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="title">
+       <string>شدت</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>شدید(10)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="hsintensity">
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="maximum">
+              <number>10</number>
+             </property>
+             <property name="pageStep">
+              <number>5</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="tickInterval">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>خنثی(0)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>شدت</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sbintensity">
+             <property name="maximum">
+              <number>10</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>788</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>btnback</tabstop>
+  <tabstop>sbsec</tabstop>
+  <tabstop>sbminut</tabstop>
+  <tabstop>leprobname</tabstop>
+  <tabstop>cbtype</tabstop>
+  <tabstop>cbcateg</tabstop>
+  <tabstop>cbrelate</tabstop>
+  <tabstop>lesearchmem</tabstop>
+  <tabstop>cbsearchcat</tabstop>
+  <tabstop>lwsearch</tabstop>
+  <tabstop>chkbxmanualduration</tabstop>
+  <tabstop>teadditionaldescription</tabstop>
+  <tabstop>hsintensity</tabstop>
+  <tabstop>sbintensity</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>hsintensity</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sbintensity</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>601</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sbintensity</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hsintensity</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>504</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chkbxmanualduration</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>frmmanualtime</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>399</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbrelate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lesearchmem</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbrelate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cbsearchcat</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>81</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbrelate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lwsearch</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbfile</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>frmd</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>755</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>629</x>
+     <y>476</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
